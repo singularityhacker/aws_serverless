@@ -12,6 +12,8 @@
 # Happy Coding!
 
 service: betaService # NOTE: update this with your service name
+app: myapp-dev
+tenant: singularityhacker
 
 # You can pin your service to only deploy with a specific Serverless version
 # Check out our docs for more details
@@ -59,7 +61,8 @@ functions:
     handler: handler.hello
     events:
       - http:
-          path: hello/get
+          # path: hello/get
+          path: index
           method: get
 
 
